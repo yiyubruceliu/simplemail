@@ -70,10 +70,10 @@ python calendar_client.py calendars
 python calendar_client.py calendars -v   # full URL and id
 ```
 
-**Shared calendars ("Other calendars")** — Google does not expose calendars shared with you (e.g. yi-yu.liu@modul.ac.at, yiyubruceliu@gmail.com) via CalDAV until you enable them for sync:
+**Shared calendars ("Other calendars")** — Google does not expose calendars shared with you (e.g. colleague@work.example.com, other@gmail.com) via CalDAV until you enable them for sync:
 
-1. Open **[Google Calendar sync select](https://www.google.com/calendar/syncselect)** (while signed in as openclawbruce@gmail.com).
-2. Check the calendars you want to sync (your primary, **yi-yu.liu@modul.ac.at**, **yiyubruceliu@gmail.com**, etc.).
+1. Open **[Google Calendar sync select](https://www.google.com/calendar/syncselect)** (while signed in as your Google account).
+2. Check the calendars you want to sync (your primary, shared work calendar, other shared calendars, etc.).
 3. Save. After that, `python calendar_client.py calendars` will list them and you can use `--calendar <id>` for events.
 
 ### List events
